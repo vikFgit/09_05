@@ -1,4 +1,5 @@
 .cards-container{
+  margin-top: 20px;
   --main-color: #17a2b8;
   /* отцентрировать несколько карточек */
   text-align: center;
@@ -20,7 +21,7 @@ text-align: center;
 font-family: sans-serif;
 }
 .card-bd-header{
-height: calc(1.3*var(--img-size));
+height: calc(1.5*var(--img-size));
 background-color: var(--main-color);
 }
 .card-content{
@@ -35,24 +36,51 @@ background-color: var(--main-color);
   padding: 3px;
   border: 1px solid grey;
   border-radius: 50%;
+  margin-bottom: 20px;
   background-color: #fff;
   object-fit: cover;
   object-position: top;
+}
+.fullname-user{
+  padding-bottom: 10px;
+  font-size: 1.1em;
+  font-weight: 500;
 }
 .format-text{
   text-transform: capitalize;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  text-align: center;
+}
+.btm-wrapper{
+  padding: 15px;
+  border-top: 1px solid rgb(209, 209, 209);
+  border-bottom: 1px solid rgb(209, 209, 209);
+  margin: 10px 30px;
+}
+.btm-wrapper :first-child{
+  background-color: rgb(97, 161, 97);
+}
+.btm-wrapper :last-child{
+  background-color: var(--main-color);
 }
 .btm{
   min-width: 20px;
-  max-width: 40%;
+  max-width: 60%;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  color: rgb(255, 255, 255);
+}
+.card-wrapper p{
+  padding-bottom: 20px;
+  line-height: 1.2;
 }
 .card-footer{
   background-color: var(--main-color);
 }
-.social-icon{
+.social-icon{ 
   display: inline-block;
   /*ссылки на соцсети имеют большее покрытие для кликабельности, но иконка отображается на 24
   width: 32px;
@@ -60,9 +88,16 @@ background-color: var(--main-color);
   background-size: 24px; */
   width: 32px;
   height: 32px;
+  padding: 10px;
   background-size: 24px;
   background-repeat: no-repeat;
   background-position: center;
+}
+.map-marker{
+  width: 15px;
+  height: 15px;
+  background-size: 15px;
+  background-image: url(../icons/map-marker.png);
 }
 .fb{
   background-image: url(../icons/facebook.png);
