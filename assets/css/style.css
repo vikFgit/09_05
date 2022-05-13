@@ -97,7 +97,7 @@ background-color: var(--main-color);
   width: 15px;
   height: 15px;
   background-size: 15px;
-  background-image: url(../icons/map-marker.png);
+  background-image: url(./../icons/map-marker.png);
 }
 .fb{
   background-image: url(../icons/facebook.png);
